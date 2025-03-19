@@ -1,9 +1,16 @@
 public String aOrAn(String word) {
-    String lower = word.toLowerCase();
-    if(lower.startsWith(a) || lower.startsWith(e) || lower.startsWith(i) ||lower.startsWith(o) || lower.startsWith(u)){
-        return 'an ' + word;
+    if (word == null || word.isEmpty()) {
+        return word; // Handle null or empty input gracefully
     }
-    else{
+
+    String lower = word.toLowerCase(); // Convert word to lowercase
+
+    // Correcting syntax by passing strings in startsWith()
+    if (lower.startsWith('a') || lower.startsWith('e') || 
+        lower.startsWith('i') || lower.startsWith('o') || 
+        lower.startsWith('u')) {
+        return 'an ' + word;
+    } else {
         return 'a ' + word;
     }
 }

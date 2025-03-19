@@ -1,5 +1,5 @@
 public String aOrAn(String word) {
-    if (word == null || word.isEmpty()) {
+    if (word == null) {
         return word; // Handle null or empty input gracefully
     }
 

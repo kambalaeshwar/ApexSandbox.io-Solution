@@ -1,5 +1,5 @@
 public String aOrAn(String word) {
-    String lower = word.toLowerCase;
+    String lower = word.toLowerCase();
     if(lower.startWith(a) || lower.startWith(e) || lower.startWith(i) ||lower.startWith(0) || lower.startWuth(u)){
         return 'an ' + word;
     }

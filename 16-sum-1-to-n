@@ -1,7 +1,7 @@
 public Integer sumToN(Integer n) {
     Integer num=0;
     for(Integer i=1; i<=n; i++){
-        num+=i;
-         
+        num += i;
     }
+    System.debug('Sum 1 to N is', + num);
 }

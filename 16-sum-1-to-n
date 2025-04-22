@@ -3,5 +3,6 @@ public Integer sumToN(Integer n) {
     for(Integer i=1; i<=n; i++){
         num += i;
     }
-    System.debug('Sum 1 to N is', + num);
+    System.debug('Sum from 1 to ' + n + ' is: ' + num);
+    return num;
 }

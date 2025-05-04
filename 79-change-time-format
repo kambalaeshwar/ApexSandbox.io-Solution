@@ -22,4 +22,3 @@ public String changeTimeFormat(String strTime) {
 
     return hourStr + ':' + minute + ' ' + meridian;
 }
-}

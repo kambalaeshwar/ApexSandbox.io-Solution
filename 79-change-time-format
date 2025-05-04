@@ -20,5 +20,5 @@ public String changeTimeFormat(String strTime) {
     // Ensure hour is always two digits
     String hourStr = hour12 < 10 ? '0' + String.valueOf(hour12) : String.valueOf(hour12);
 
-    return hourStr + ':' + minute + ' ' + AMorPM;
+    return hourStr + ':' + parts[1] + ' ' + AMorPM;
 }

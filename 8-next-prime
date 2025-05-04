@@ -1,9 +1,9 @@
 public Integer nextPrime(Integer num) {
-    While(true){
+    while(true){
         Integer Count=0;
         Integer NP = ++num;
         for(Integer i = 2; i<NP; i++){
-            If(Math.mod(NP,i)==0){
+            if(Math.mod(NP,i)==0){
                 Count++;
             }
         }

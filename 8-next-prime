@@ -1,0 +1,15 @@
+public Integer nextPrime(Integer num) {
+    While(num){
+        Integer Count=0;
+        Integer NP = num++;
+        for(Integer i = 2; i<NP; i++){
+            If(Math.mod(NP,2)){
+                Count++
+            }
+        }
+        if(Count==0){
+            return NP;
+        }
+        }
+    }
+}

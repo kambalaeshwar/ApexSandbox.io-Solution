@@ -1,0 +1,25 @@
+public String changeTimeFormat(String strTime) {
+   List<String> parts= strTime.split(:);
+   Integer hour24 = Integer.valueOf(parts[0]);
+   String AMorPM;
+   Integer hour12;
+   if(hour24 == 0){
+       hour12 = 12;
+       AMorPM = 'AM';
+   } else if (hour24 < 12) {
+        hour12 = hour24;
+        AMorPM = 'AM';
+   } else if (hour24 == 12) {
+        hour12 = 12;
+        AMorPM = 'PM';
+   } else {
+        hour12 = hour24 - 12;
+        AMorPM = 'PM';
+   }
+
+    // Ensure hour is always two digits
+    String hourStr = hour12 < 10 ? '0' + String.valueOf(hour12) : String.valueOf(hour12);
+
+    return hourStr + ':' + minute + ' ' + meridian;
+}
+}

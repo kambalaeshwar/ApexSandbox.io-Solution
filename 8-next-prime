@@ -10,6 +10,5 @@ public Integer nextPrime(Integer num) {
         if(Count==0){
             return NP;
         }
-        }
     }
 }

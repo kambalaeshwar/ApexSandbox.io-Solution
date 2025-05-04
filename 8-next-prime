@@ -1,14 +1,22 @@
 public Integer nextPrime(Integer num) {
-    while(true){
-        Integer Count=0;
-        Integer NP = ++num;
-        for(Integer i = 2; i<NP; i++){
-            if(Math.mod(NP,i)==0){
-                Count++;
+    // Ensure we're starting with a valid number
+    num = Math.max(num, 1); // Ensure num is at least 1, because there are no primes less than 1
+    
+    while (true) {
+        num++;  // Check the next number
+        
+        // Check if num is prime
+        Boolean isPrime = true;
+        for (Integer i = 2; i < num; i++) {
+            if (Math.mod(num, i) == 0) {
+                isPrime = false;
+                break;
             }
         }
-        if(Count==0){
-            return NP;
+        
+        // If prime, return num
+        if (isPrime) {
+            return num;
         }
     }
 }

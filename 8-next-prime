@@ -1,8 +1,5 @@
 public Integer nextPrime(Integer num) {
-    if(num == 2){
-            return num;
-    }    
-While(true){
+    while(true){
         num++;  // Check the next number
         
         Boolean isPrime = true;

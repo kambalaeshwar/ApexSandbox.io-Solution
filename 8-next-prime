@@ -1,18 +1,31 @@
 public Integer nextPrime(Integer num) {
-    while(true){
-        num++;  // Check the next number
-        
+    // Start checking from the next number after num
+    Integer candidate = num + 1;
+    
+    // Handle edge case for numbers less than 2
+    if (candidate < 2) {
+        return 2;
+    }
+    
+    while(candidate <= 1000000) { // Add upper bound to satisfy compiler
         Boolean isPrime = true;
-        for (Integer i = 2; i < num; i++) {
-            if (Math.mod(num, i) == 0) {
+        
+        // Check if candidate is prime
+        for (Integer i = 2; i < candidate; i++) {
+            if (Math.mod(candidate, i) == 0) {
                 isPrime = false;
                 break;
             }
         }
         
-        // If prime, return num
+        // If prime, return candidate
         if (isPrime) {
-            return num;
+            return candidate;
         }
+        
+        candidate++;
     }
+    
+    // This should never be reached for reasonable inputs
+    return 2;
 }

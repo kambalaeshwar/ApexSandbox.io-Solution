@@ -2,7 +2,7 @@ public Integer nextPrime(Integer num) {
     if(num == 2){
             return num;
     }    
-When(true){
+While(true){
         num++;  // Check the next number
         
         Boolean isPrime = true;

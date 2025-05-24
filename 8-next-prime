@@ -4,20 +4,20 @@ public Integer nextPrime(Integer num) {
     
     while (true) {
         num++;  // Check the next number
-        If(num == 2){
+        if(num == 2){
             return num;
         }
         
         Boolean isPrime = true;
         for (Integer i = 2; i < num; i++) {
-            If (Math.mod(num, i) == 0) {
+            if (Math.mod(num, i) == 0) {
                 isPrime = false;
                 break;
             }
         }
         
         // If prime, return num
-        If (isPrime) {
+        if (isPrime) {
             return num;
         }
     }

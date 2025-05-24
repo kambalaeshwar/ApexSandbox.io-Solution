@@ -1,12 +1,9 @@
 public Integer nextPrime(Integer num) {
-    // Ensure we're starting with a valid number
-    num = Math.max(num, 1); // Ensure num is at least 1, because there are no primes less than 1
-    
-    while (true) {
-        num++;  // Check the next number
-        if(num == 2){
+    if(num == 2){
             return num;
-        }
+    }    
+When(true){
+        num++;  // Check the next number
         
         Boolean isPrime = true;
         for (Integer i = 2; i < num; i++) {

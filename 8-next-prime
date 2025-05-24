@@ -4,7 +4,9 @@ public Integer nextPrime(Integer num) {
     
     while (true) {
         num++;  // Check the next number
-        
+        If(num == 2){
+            return num;
+        }
         
         Boolean isPrime = true;
         for (Integer i = 2; i < num; i++) {

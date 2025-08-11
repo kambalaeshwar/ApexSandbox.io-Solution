@@ -10,8 +10,7 @@ public Integer fibonacci(Integer n) {
         x = y;
         y = m;
     }
-
+    return m;
     }
     
-    return m;
 }

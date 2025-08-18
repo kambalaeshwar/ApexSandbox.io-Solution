@@ -6,7 +6,7 @@ public Integer nextPrime(Integer num) {
     return checkPrime(candidate);
 }
     
-private  Integer checkPrime(Integer n) {
+private Integer checkPrime(Integer n) {
         // Check if n is prime
         Boolean isPrime = true;
         for (Integer i = 2; i < n; i++) {

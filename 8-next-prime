@@ -1,12 +1,12 @@
 public Integer nextPrime(Integer num) {
-        Integer candidate = num + 1;
+    Integer candidate = num + 1;
         if (candidate < 2) {
             return 2;
-        }
-        return checkPrime(candidate);
     }
+    return checkPrime(candidate);
+}
     
-    private static Integer checkPrime(Integer n) {
+private static Integer checkPrime(Integer n) {
         // Check if n is prime
         Boolean isPrime = true;
         for (Integer i = 2; i < n; i++) {
@@ -22,4 +22,4 @@ public Integer nextPrime(Integer num) {
         }
         // Otherwise, try the next number (recursion)
         return checkPrime(n + 1);
-    }
+}

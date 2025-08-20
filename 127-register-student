@@ -5,6 +5,6 @@ public String registerStudent(String name, String phone, String email) {
     rec.apxio__Phone__c = phone;
     rec.apxio__Email__c = email;
     insert rec;
-    apxio__Student__c record = [SELECT Name, apxio__Phone__c, apxio__Email__c, apxio__Registration_Number__c from apxio__Student__c WHERE Id= :rec.Id];
+    rec = [SELECT Name, apxio__Phone__c, apxio__Email__c, apxio__Registration_Number__c from apxio__Student__c WHERE Id= :rec.Id];
     return record.apxio__Registration_Number__c;
 }
